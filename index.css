@@ -18,7 +18,7 @@
  background: url("https://raw.githubusercontent.com//CorrelAidSwitzerland/DataViz4Good/main/src/img/correlaidbg.jpeg");
  background-size: cover;
  color: white;
- padding: 30px 22% 70px 22%;
+ padding: 30px 10% 70px 14%;
  margin-left: calc(-50vw + 50%);
  margin-right: calc(-50vw + 50%);
  margin-top: -20px;
@@ -113,7 +113,7 @@ h2 {
 .td-special-blue {
   font-weight:100;
   font-style: italic;
-  background-color:#7FBDF7;
+  background-color:#475B98;
   color:#ffffff;
 }
 
@@ -125,7 +125,7 @@ h2 {
 }
 
 .td-red {
-  background-color:#F8716F;
+  background-color:#D25063;
   color:#ffffff;
 }
 
@@ -167,7 +167,7 @@ r {color: #FF3A2A;}
 
 .my-table a {
   color: white;
-  font-weight: 900;
+  font-weight: 300;
   }
 
 .my-table a:hover {
