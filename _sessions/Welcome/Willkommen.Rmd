@@ -1,8 +1,8 @@
 ---
-title: "Willkommen!"
-author: "Einführung in die moderne Datenanalyse mit R<br>
+title: "Welcome! <font style='font-size:48px'>(to the tidyverse)</font>"
+author: "Data Visualization for Social Good<br>
   <a href='https://therbootcamp.github.io'>
-    The R Bootcamp
+    CorrelAid Switzerland
   </a>
   <br>
   <a href='https://therbootcamp.github.io/I2R_2020Oct/'>
@@ -39,13 +39,13 @@ layout: true
     <a href="https://therbootcamp.github.io/">
       <span style="padding-left:82px"> 
         <font color="#7E7E7E">
-          www.therbootcamp.com
+          https://correlaid.org/correlaid-x/switzerland/
         </font>
       </span>
     </a>
-    <a href="https://therbootcamp.github.io/">
+    <a href="https://correlaid.org/correlaid-x/switzerland/">
       <font color="#7E7E7E">
-      Einführung in die moderne Datenanalyse mit R | Oktober 2020
+      Data Visualization for Social Good | February 2021
       </font>
     </a>
     </span>
@@ -88,10 +88,10 @@ Klicke auf <high>"....running..."</high> auf unserer Website!
 <br><br><br><br><br>
 
 
-# Ziel
+# Goal
 
 
->###Das Ziel dieses Kurses ist es Euch die Grundlagen der Programmiersprache R und einen Überblick über Einsatzmäglichkeiten zu bieten. 
+>### The goal of this workshop is to introduce you to data exploration and visualization with the R tidyverse, using a working example for social good!
 
 ]
 
