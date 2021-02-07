@@ -119,7 +119,6 @@ Klicke auf <high>"....running..."</high> auf unserer Website!
   </ul>
 </ul>
 
-
 ]
 
 .pull-right4[
@@ -128,38 +127,9 @@ Klicke auf <high>"....running..."</high> auf unserer Website!
 
 ]
 
-´
 
 ---
 
-# Vorstellungsrunde
-
-.pull-left5[
-
-<ul>
-  <li class="m1"><span>Wie heisst Du?</span></li>
-  <li class="m2"><span>Was ist Dein Beruf?</span></li>
-  <li class="m3"><span>Hast Du Programmiererfahrung mit R oder allgemein?</span></li>
-  <li class="m4"><span>Warum möchtest Du R lernen?</span></li>
-  <li class="m5"><span>Kaffee oder Tee?</span></li>
-  <li class="m6"><span>Bier oder Wein?</span></li>
-  <li class="m7"><span>Berlin oder Paris?</span></li>
-</ul>
-
-
-]
-
-.pull-right45[
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/therbootcamp/therbootcamp.github.io/master/_sessions/_image/introductions.jpg" height="360px">
-<br>
-<font style="font-size:10px">from <a href="www.artofmanliness.com">artofmanliness.com</a></font>
-</p>
-
-]
-
----
 class: middle, center
 
 <h1><a href=https://therbootcamp.github.io/I2R_2020Aug/index.html>Schedule</a></h1>
