@@ -45,7 +45,7 @@ layout: true
 
 
 
-
+&lt;!---
 .pull-left45[
 
 # What is "Wrangling"?
@@ -84,7 +84,7 @@ layout: true
 
 ]
 
----
+---&gt;
 
 
 .pull-left3[
@@ -191,7 +191,7 @@ score %&gt;%
 
 ---
 
-# Reading in data
+# &lt;mono&gt;readr&lt;/mono&gt;
 
 
 .pull-left45[
@@ -224,7 +224,7 @@ score %&gt;%
 
 ---
 
-# Reading in data
+# &lt;mono&gt;readr&lt;/mono&gt;
 
 .pull-left45[
 
@@ -336,7 +336,7 @@ basel
 
 .pull-left45[
 
-# Wrangling
+# &lt;mono&gt;dplyr&lt;/mono&gt;
 
 &lt;ul&gt;
   &lt;li class="m1"&gt;&lt;span&gt;Benefits over Base R:&lt;/span&gt;&lt;/li&gt;
@@ -464,7 +464,7 @@ basel %&gt;%
 ]
 
 
----
+&lt;!---
 
 # `slice()`
 
@@ -513,6 +513,8 @@ basel %&gt;%
 
 ]
 
+---&gt;
+
 ---
 
 # `filter()`
@@ -523,10 +525,10 @@ basel %&gt;%
 ```r
 # Filter using logical comparisons
 TIBBLE %&gt;%
-  filter(VAR1 == WERT1,
-         VAR2 &gt; WERT2,
-         VAR3 &lt; WERT3,
-         VAR4 == WERT4 | VAR5 &lt; WERT5)
+  filter(VAR1 == VAL1,
+         VAR2 &gt; VAL2,
+         VAR3 &lt; VAL3,
+         VAR4 == VAL4 | VAR5 &lt; VAL5)
 ```
 ]
 
@@ -649,7 +651,7 @@ basel %&gt;%
 
 ]
 
----
+&lt;!---
 
 
 # `summarise_if()`
@@ -697,6 +699,8 @@ basel %&gt;%
 
 
 ]
+
+---&gt;
 
 ---
 
@@ -861,7 +865,7 @@ basel %&gt;%
 
 
 
-# Pivoting
+# &lt;mono&gt;tidyr&lt;/mono&gt;
 
 .pull-left4[
 

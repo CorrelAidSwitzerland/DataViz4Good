@@ -66,7 +66,7 @@ require(tidyverse)
 basel = readr::read_csv('1_data/basel.csv')
 ```
 
-
+<!---
 .pull-left45[
 
 # What is "Wrangling"?
@@ -105,7 +105,7 @@ basel = readr::read_csv('1_data/basel.csv')
 
 ]
 
----
+--->
 
 
 .pull-left3[
@@ -195,7 +195,7 @@ score %>%
 
 ---
 
-# Reading in data
+# <mono>readr</mono>
 
 
 .pull-left45[
@@ -228,7 +228,7 @@ score %>%
 
 ---
 
-# Reading in data
+# <mono>readr</mono>
 
 .pull-left45[
 
@@ -312,7 +312,7 @@ basel
 
 .pull-left45[
 
-# Wrangling
+# <mono>dplyr</mono>
 
 <ul>
   <li class="m1"><span>Benefits over Base R:</span></li>
@@ -427,7 +427,7 @@ basel %>%
 ]
 
 
----
+<!---
 
 # `slice()`
 
@@ -459,6 +459,8 @@ basel %>%
 
 ]
 
+--->
+
 ---
 
 # `filter()`
@@ -468,10 +470,10 @@ basel %>%
 ```{r, eval = F}
 # Filter using logical comparisons
 TIBBLE %>%
-  filter(VAR1 == WERT1,
-         VAR2 > WERT2,
-         VAR3 < WERT3,
-         VAR4 == WERT4 | VAR5 < WERT5)
+  filter(VAR1 == VAL1,
+         VAR2 > VAL2,
+         VAR3 < VAL3,
+         VAR4 == VAL4 | VAR5 < VAL5)
 ```
 ]
 
@@ -552,7 +554,7 @@ basel %>%
 
 ]
 
----
+<!---
 
 
 # `summarise_if()`
@@ -584,6 +586,8 @@ basel %>%
 
 
 ]
+
+--->
 
 ---
 
@@ -700,7 +704,7 @@ options(tibble.width = 35, tibble.max_extra_cols = 10, tibble.print_max = 5,
 ```
 
 
-# Pivoting
+# <mono>tidyr</mono>
 
 .pull-left4[
 
