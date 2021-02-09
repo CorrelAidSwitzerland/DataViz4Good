@@ -1,5 +1,5 @@
 ---
-title: "Next steps"
+title: "Tidyverse cont'd"
 author: "Data Visualization for Social Good<br>
   <a href='https://correlaid.org/correlaid-x/switzerland/'>
     CorrelAid Switzerland
@@ -98,10 +98,19 @@ basel_map = read_sf('1_Data/map')
 
 # <mono>tidyverse</mono> core
 
+<ul>
+  <li class="m1"><span>The tidyverse is...</span></li><br>
+  <ul class="level">
+    <li><span>A collection of user-friendly <high>packages</high> for analyzing <high>tidy data</high></span></li><br>
+    <li><span>An <high>ecosystem</high> for analytics and data science with common design principles</span></li><br>
+    <li><span>A <high>dialect</high> of the R language</span></li>
+  </ul>
+</ul>
+
 ]
 
 
-.pull-right7[
+.pull-right6[
 <br>
 <p align="left">
   <img src="image/tidyverse.png" style="height:540px">
@@ -114,6 +123,10 @@ basel_map = read_sf('1_Data/map')
 .pull-left2[
 
 # `tidyverse` extended
+
+<ul>
+  <li class="m1"><span>The tidyverse is...an <high>ecosystem</high> for analytics and data science with common design principles</span></li>
+</ul>
 
 ]
 
