@@ -101,7 +101,7 @@ basel_map %>%
  theme_void() + 
   labs(title = "Inequality in Basel",
        subtitle = "Average income in Basel's quarters in 2017",
-       caption = "Source: Source: Open Data Basel Stadt") + 
+       caption = "Source: Open Data Basel Stadt") + 
   scale_fill_continuous(name = 'Income') 
 ```
 
@@ -441,7 +441,7 @@ quarters_map %>%
   # add annotion
   labs(title = "Inequality in Basel",
      subtitle = "Average income in Basel...",
-     caption = "Source: Source: Open...")
+     caption = "ource: Open Data Basel...")
 ```
 
 ]
@@ -461,7 +461,7 @@ quarters_map %>%
   scale_fill_continuous(name = 'Income') +
   labs(title = "Inequality in Basel",
      subtitle = "Average income in Basel's quarters in 2017",
-     caption = "Source: Source: Open Data Basel Stadt")
+     caption = "Source: Open Data Basel Stadt")
 ```
 
 ]
