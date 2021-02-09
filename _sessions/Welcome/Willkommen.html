@@ -13,8 +13,8 @@
 class: center, middle, inverse, title-slide
 
 # Welcome! <font style='font-size:48px'>(to the tidyverse)</font>
-### Data Visualization for Social Good<br> <a href='https://therbootcamp.github.io'> CorrelAid Switzerland </a> <br> <a href='https://therbootcamp.github.io/I2R_2020Oct/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
-### Oktober 2020
+### Data Visualization for Social Good<br> <a href='https://correlaid.org/correlaid-x/switzerland/'> CorrelAid Switzerland </a> <br> <a href='https://correlaidswitzerland.github.io/DataViz4Good/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://correlaid.org/correlaid-x/switzerland/'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='switzerland@correlaid.org'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/correlaidswiss/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
+### February 2021
 
 ---
 
@@ -75,7 +75,7 @@ Klicke auf &lt;high&gt;"....running..."&lt;/high&gt; auf unserer Website!
 # Goal
 
 
-&gt;### The goal of this workshop is to introduce you to data exploration and visualization with the R tidyverse, using a working example for social good!
+&gt;### The goal of this workshop is to introduce you to data exploration and visualization with the R tidyverse, using a for-social-good working example!
 
 ]
 
@@ -88,65 +88,191 @@ Klicke auf &lt;high&gt;"....running..."&lt;/high&gt; auf unserer Website!
 
 ---
 
+.pull-left3[
+
+# Inequality in Basel
+
+&lt;font style="font-size:28px"&gt;&lt;high&gt;&lt;i class="far fa-question-circle"&gt;&lt;/i&gt;&lt;/high&gt; How has the distribution of income and wealth changed within and between Basel's quarters from 2001 and 2017?&lt;/i&gt;&lt;/font&gt;
+
+&lt;br&gt;
+
+&lt;p align="center"&gt;
+&lt;img src="image/basel_open_data.png" height=220px&gt;
+&lt;/p&gt;
+
+]
+
+.pull-right6[
+
+&lt;br&gt;
+
+&lt;p align="center"&gt;
+&lt;img src="image/quarters.png" height=540px&gt;
+&lt;/p&gt;
+
+]
+
+---
+
+.pull-left3[
+
+# Inequality in Basel
+
+&lt;font style="font-size:28px"&gt;&lt;high&gt;&lt;i class="far fa-question-circle"&gt;&lt;/i&gt;&lt;/high&gt; How has the distribution of income and wealth changed within and between Basel's quarters from 2001 and 2017?&lt;/i&gt;&lt;/font&gt;
+
+&lt;br&gt;
+
+&lt;p align="center"&gt;
+&lt;img src="image/basel_open_data.png" height=220px&gt;
+&lt;/p&gt;
+
+]
+
+.pull-right6[
+
+&lt;br&gt;
+
+&lt;p align="center"&gt;
+&lt;img src="image/data.png" height=540px&gt;
+&lt;/p&gt;
+
+]
+
+
+
+
+---
+
+.pull-left3[
+
+# Mean, Median, Gini
+
+&lt;ul&gt;
+  &lt;li class="m1"&gt;&lt;span&gt;Inequality arising from a &lt;high&gt;rich-get-richer&lt;/high&gt; dynamic materializes as an increasingly right-skewed income distribution.&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+  &lt;li class="m2"&gt;&lt;span&gt;This can be detected:&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+  &lt;ul class="level"&gt;
+    &lt;li&gt;&lt;span&gt;&lt;high&gt;Mean&lt;/high&gt; income grows faster than &lt;high&gt;median&lt;/high&gt; income.&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;The &lt;high&gt;Gini&lt;/high&gt; coefficient goes up.&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;
+
+]
+
+
+.pull-right65[
+&lt;br&gt;
+&lt;p align="center"&gt;
+&lt;img src="image/distr.gif" width="360px"&gt;&lt;br&gt;
+&lt;img src="image/gini.gif" width="360px"&gt;
+&lt;/p&gt;
+]
+
+---
+
+.pull-left3[
+
+# Tidyverse
+
+&lt;ul&gt;
+  &lt;li class="m1"&gt;&lt;span&gt;The tidyverse is...&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+  &lt;ul class="level"&gt;
+    &lt;li&gt;&lt;span&gt;A collection of user-friendly &lt;high&gt;packages&lt;/high&gt; for analyzing &lt;high&gt;tidy data&lt;/high&gt;&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;An &lt;high&gt;ecosystem&lt;/high&gt; for analytics and data science with common design principles&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;A &lt;high&gt;dialect&lt;/high&gt; of the R language&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;
+
+]
+
+.pull-right65[
+&lt;br&gt;&lt;br&gt;
+&lt;p align="center"&gt;
+&lt;img src="image/tidyverse.png" height = "520px"&gt;
+&lt;/p&gt;
+]
+
+
+---
+
+
+.pull-left3[
+
+# Tidyverse
+
+&lt;ul&gt;
+  &lt;li class="m1"&gt;&lt;span&gt;The tidyverse is...&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+  &lt;ul class="level"&gt;
+    &lt;li&gt;&lt;span&gt;A collection of user-friendly &lt;high&gt;packages&lt;/high&gt; for analyzing &lt;high&gt;tidy data&lt;/high&gt;&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;An &lt;high&gt;ecosystem&lt;/high&gt; for analytics and data science with common design principles&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;A &lt;high&gt;dialect&lt;/high&gt; of the R language&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;
+
+]
+
+.pull-right65[
+&lt;br&gt;&lt;br&gt;
+&lt;p align="center"&gt;
+&lt;img src="image/tidyverse_highlight.png" height = "520px"&gt;
+&lt;/p&gt;
+]
+
+---
+
+# RStudio
+
+.pull-left3[
+
+&lt;ul&gt;
+  &lt;li class="m1"&gt;&lt;span&gt;RStudio is...&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+  &lt;ul class="level"&gt;
+    &lt;li&gt;&lt;span&gt;A high-productivity &lt;high&gt;data science IDE.&lt;/high&gt;&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;The &lt;high&gt;company&lt;/high&gt; behind the tidyverse.&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt;&lt;span&gt;Designed for R tidyverse with &lt;high&gt;good integration&lt;/high&gt; for Python, Markdown, or C++.&lt;/span&gt;&lt;/li&gt;&lt;br&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;
+
+]
+
+.pull-right6[
+&lt;p align="center"&gt;
+&lt;img src="image/rstudio.png"&gt;
+&lt;/p&gt;
+]
+
+
+
+---
+
 .pull-left45[
 
 &lt;br&gt;
 # Schedule 
 
 &lt;ul&gt;
-  &lt;li class="m1"&gt;&lt;span&gt;Der Workshop beinhaltet fünf &lt;high&gt;halbstündige R Blöcke&lt;/high&gt; (in grau).&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m2"&gt;&lt;span&gt;Blöcke&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="m1"&gt;&lt;span&gt;The core of the workshop consists of four 40min sessions.&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="m2"&gt;&lt;span&gt;Sessions consist of&lt;/span&gt;&lt;/li&gt;
   &lt;ul class="level"&gt;
-    &lt;li&gt;&lt;span&gt;Folien-basierten &lt;high&gt;Einführung (10min)&lt;/high&gt;&lt;/span&gt;&lt;/li&gt; 
-    &lt;li&gt;&lt;span&gt;Selbsständige &lt;high&gt;Übung (15min)&lt;/high&gt;&lt;/span&gt;&lt;/li&gt; 
-    &lt;li&gt;&lt;span&gt;Interaktive &lt;high&gt;Lösungen (5min)&lt;/high&gt;&lt;/span&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;span&gt;15-20min introduction&lt;/high&gt;&lt;/span&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;span&gt;20-25min coding exercises&gt;&lt;/span&gt;&lt;/li&gt; 
   &lt;/ul&gt;
+  &lt;li class="m3"&gt;&lt;span&gt;Stick around for an intro to &lt;a href="https://correlaid.org/correlaid-x/switzerland/"&gt;Correlaid Switzerland&lt;/a&gt; at the end.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-
-]
-
-.pull-right4[
-&lt;br&gt;&lt;br&gt;
-&lt;img src="image/schedule.png" height="525" align="center" style="padding-top:16px"&gt;
-
-]
-
-´
-
----
-
-# Vorstellungsrunde
-
-.pull-left5[
-
-&lt;ul&gt;
-  &lt;li class="m1"&gt;&lt;span&gt;Wie heisst Du?&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m2"&gt;&lt;span&gt;Was ist Dein Beruf?&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m3"&gt;&lt;span&gt;Hast Du Programmiererfahrung mit R oder allgemein?&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m4"&gt;&lt;span&gt;Warum möchtest Du R lernen?&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m5"&gt;&lt;span&gt;Kaffee oder Tee?&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m6"&gt;&lt;span&gt;Bier oder Wein?&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m7"&gt;&lt;span&gt;Berlin oder Paris?&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 
 ]
 
 .pull-right45[
-
-&lt;p align="center"&gt;
-&lt;img src="https://raw.githubusercontent.com/therbootcamp/therbootcamp.github.io/master/_sessions/_image/introductions.jpg" height="360px"&gt;
-&lt;br&gt;
-&lt;font style="font-size:10px"&gt;from &lt;a href="www.artofmanliness.com"&gt;artofmanliness.com&lt;/a&gt;&lt;/font&gt;
-&lt;/p&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="image/schedule.png" height="480" align="center" style="padding-top:16px"&gt;
 
 ]
 
+
 ---
+
 class: middle, center
 
-&lt;h1&gt;&lt;a href=https://therbootcamp.github.io/I2R_2020Aug/index.html&gt;Schedule&lt;/a&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;a href="https://correlaidswitzerland.github.io/DataViz4Good/"&gt;Schedule&lt;/a&gt;&lt;/h1&gt;
 
 
     </textarea>
