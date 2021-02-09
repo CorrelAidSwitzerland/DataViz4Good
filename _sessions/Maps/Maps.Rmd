@@ -83,7 +83,7 @@ basel_map = sf::read_sf('1_Data/quarters')
 
 <ul>
   <li class="m1"><span>Maps require geometric shapes stored in <high>shapefiles</high>.</span></li><br>
-  <li class="m2"><span>The <high>simple features</high> (<mono>sf</mono>) framework makes processing and visualizing maps integration with tidyverse easy.</span></li>
+  <li class="m2"><span>The <high>simple features</high> (<mono>sf</mono>) framework makes processing and visualizing maps with the <mono>tidyverse<mono> easy.</span></li>
 </ul>
 
 ]
