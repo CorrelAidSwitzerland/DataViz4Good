@@ -453,7 +453,7 @@ basel
 
 # Books  
 
-Hier ist eine unvollständige Liste guter Bücher über R lose geordnet nach vorausgesetzter Erfahrung.<br><br>
+An incomplete list of good books loosely sorted by required amount of R experience.<br><br>
 
 <table width="80%" style="cellspacing:0; cellpadding:0; border:none;">
 
