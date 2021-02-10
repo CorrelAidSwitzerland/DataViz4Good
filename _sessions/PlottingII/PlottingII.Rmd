@@ -598,7 +598,7 @@ my_plot +
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
-    legend.text = element_text(size = 7)) + 
+    legend.text = element_text(size=7)) + 
   
   # color using viridis
   scale_color_viridis_d()
@@ -649,7 +649,7 @@ basel %>%
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
-    legend.text = element_text(size = 7)) + 
+    legend.text = element_text(size=7)) + 
   scale_color_viridis_d()
 ```
 
@@ -674,7 +674,7 @@ basel %>%
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
-    legend.text = element_text(size = 7)) + 
+    legend.text = element_text(size=7)) + 
   scale_color_viridis_d()
 ```
 
@@ -711,7 +711,7 @@ my_plot = basel %>%
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
-    legend.text = element_text(size = 7)) + 
+    legend.text = element_text(size=7)) + 
   scale_color_viridis_d()
 ```
 

@@ -8,7 +8,7 @@ editor_options:
 
 In this practical, you will read in the `taxation.csv` data set and analyze it descriptively using the `dplyr` package.
 
-# 1 - Preliminaries
+# 0 - Preliminaries
 
 1. Run the line below to load the `tidyverse`. To do this you can either place the cursor on the line and then hit Cmd-Enter (Mac) or Ctrl-Enter (Windows). Alternatively you can click on one of the symbols in the top-right corner of the code chunk. If you have not previously installed the `tidyverse`, run `install.packages("tidyverse")` and then the line below. 
 
@@ -28,7 +28,7 @@ basel <- read_csv('1_Data/taxation.csv')
 basel
 ```
 
-# 2 - Summarize
+# 1 - Summarize
 
 1. Let's analyze some data. Complete the code below to compute average Gini coefficient for income (`income_gini`) for Basel across all years. Simply replace `XX` with the appropriate variable name.
 
@@ -45,7 +45,7 @@ basel %>%
             avg_gini_wealth = mean(XX))
 ```
 
-# 3 - Filter
+# 2 - Filter
 
 1. Now look at the average Gini coefficients just for one quarter, namely `"Bettingen"`. 
 
@@ -65,7 +65,7 @@ basel %>%
             avg_gini_wealth = mean(XX))
 ```
 
-# 4 - Grouping
+# 3 - Grouping
 
 1. Wouldn't it be great if one did have to select each quarter one by one using filter? The `group_by` and`summarize` idiom saves from eaxactly that. Complete the code below to calculate the average Gini coefficients for every `quarter`.  
 
@@ -97,7 +97,7 @@ basel %>%
   print(n = XX)
 ```
 
-# 5 - Pivoting
+# 4 - Pivoting
 
 1. Finally, build on the previous chunk to transpose the data into a long format. The first argument specifies the vector of to be transposed columns. The next two specify the column names of the two variables in the long format carrying the previous column names and column values, respectively.  
 
@@ -109,7 +109,7 @@ basel %>%
   pivot_longer(XX, names_to = "XX", values_to = "XX")
 ```
 
-# 6 - Go explore
+# 5 - Go explore
 
 1. Calculate the average income and wealth across time?
 

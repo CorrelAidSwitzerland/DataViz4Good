@@ -151,14 +151,14 @@ basel = readr::read_csv('1_data/basel.csv')
 
 
 ```{r}
-# Numerischer Vektor
+# Numeric vector
 score <- c(8, 4, 6, 3, 7, 3)
 score
 
-# Mittelwert: Base-R-style
+# Mean: Base-R-style
 mean(score)
 
-# Mittelwert: dplyr-style
+# Mean: dplyr-style
 score %>%  
   mean()  
 ```

@@ -455,8 +455,8 @@ ggplot(data = basel_avg,
 .pull-left45[
 
 <ul>
-  <li class="m1">Oftentimes, creating the desired plot requires appropriate data wrangling.</span></li>
-  <li class="m2"><mono>ggplot</mono> works best with <high>long data formats</high>.</span></li>
+  <li class="m1"><span>Oftentimes, creating the desired plot requires appropriate data wrangling.</span></li>
+  <li class="m2"><span><mono>ggplot</mono> works best with <high>long data formats</high>.</span></li>
 </ul>
 
 <br>
