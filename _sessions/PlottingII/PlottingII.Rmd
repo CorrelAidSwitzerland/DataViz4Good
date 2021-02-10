@@ -409,10 +409,10 @@ my_plot +
   <li class="m1"><span>With <high>87 arguments</high> <mono>theme()</mono> permits specification of all aesthetic details.</span></li>
   <li class="m2"><span>Makes uses of helper functions:</span></li>
   <ul class="level">
-    <li><span><mono>element_rect()</mono> | für Flächen</span></li>
-    <li><span><mono>element_line()</mono> | für Linien</span></li>
-    <li><span><mono>element_text()</mono> | für Text</span></li>
-    <li><span><mono>element_blank()</mono> | zum entfernen</span></li>
+    <li><span><mono>element_rect()</mono> | for rectangles</span></li>
+    <li><span><mono>element_line()</mono> | for lines</span></li>
+    <li><span><mono>element_text()</mono> | for text</span></li>
+    <li><span><mono>element_blank()</mono> | for removals</span></li>
   </ul>
 </ul>
 

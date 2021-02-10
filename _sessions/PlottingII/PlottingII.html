@@ -383,10 +383,10 @@ my_plot +
   &lt;li class="m1"&gt;&lt;span&gt;With &lt;high&gt;87 arguments&lt;/high&gt; &lt;mono&gt;theme()&lt;/mono&gt; permits specification of all aesthetic details.&lt;/span&gt;&lt;/li&gt;
   &lt;li class="m2"&gt;&lt;span&gt;Makes uses of helper functions:&lt;/span&gt;&lt;/li&gt;
   &lt;ul class="level"&gt;
-    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_rect()&lt;/mono&gt; | für Flächen&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_line()&lt;/mono&gt; | für Linien&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_text()&lt;/mono&gt; | für Text&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_blank()&lt;/mono&gt; | zum entfernen&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_rect()&lt;/mono&gt; | for rectangles&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_line()&lt;/mono&gt; | for lines&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_text()&lt;/mono&gt; | for text&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;&lt;mono&gt;element_blank()&lt;/mono&gt; | for removals&lt;/span&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/ul&gt;
 
@@ -548,7 +548,7 @@ my_plot +
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
-    legend.text = element_text(size = 7)) + 
+    legend.text = element_text(size=7)) + 
   
   # color using viridis
   scale_color_viridis_d()
@@ -592,7 +592,7 @@ basel %&gt;%
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
-    legend.text = element_text(size = 7)) + 
+    legend.text = element_text(size=7)) + 
   scale_color_viridis_d()
 ```
 
