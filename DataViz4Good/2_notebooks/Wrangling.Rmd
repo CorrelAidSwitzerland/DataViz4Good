@@ -10,13 +10,13 @@ In this practical, you will read in the `taxation.csv` data set and analyze it d
 
 # 0 - Preliminaries
 
-1. Run the line below to load the `tidyverse`. To do this you can either place the cursor on the line and then hit Cmd-Enter (Mac) or Ctrl-Enter (Windows). Alternatively you can click on one of the symbols in the top-right corner of the code chunk. If you have not previously installed the `tidyverse`, run `install.packages("tidyverse")` and then the line below. 
+1. Run the code line below to load the `tidyverse`. To do this, you can either place the cursor on the line and then hit Cmd-Enter (Mac) or Ctrl-Enter (Windows). Alternatively you can click on the green arrow in the top-right corner of the code chunk. If you have not previously installed the `tidyverse`, run `install.packages("tidyverse")` first and then the line below. 
 
 ```{r }
 library(tidyverse)
 ```
 
-2. Use the code below to read in the `taxation.csv` and store it as an object called `basel`. Note the messages. They tell how R has inferred the types of each of the columns. Should be all good.
+2. Use the code below to read in the `taxation.csv` data set and store it as an object called `basel`. The messages printed in the console tell you how R has inferred the types of each of the columns. Should be all good.
 
 ```{r }
 basel <- read_csv('1_Data/taxation.csv')
@@ -30,14 +30,14 @@ basel
 
 # 1 - Summarize
 
-1. Let's analyze some data. Complete the code below to compute average Gini coefficient for income (`income_gini`) for Basel across all years. Simply replace `XX` with the appropriate variable name.
+1. Let's analyze the data. Complete the code below to compute the average Gini coefficient for income (`income_gini`) for Basel across all years. Simply replace `XX` with the appropriate variable name.
 
 ```{r }
 basel %>% 
   summarize(avg_gini_income = mean(XX))
 ```
 
-2. Now add another statement within `summarize` to also calculate the average Gini for wealth. What do make of the results? Think of the distributions and corresponding Gini values from the intro presentation. 
+2. Now add another statement within `summarize` to also calculate the average Gini for wealth. What do you make of the results? Think back to the distributions and corresponding Gini values from the intro presentation. 
 
 ```{r }
 basel %>% 
@@ -47,7 +47,7 @@ basel %>%
 
 # 2 - Filter
 
-1. Now look at the average Gini coefficients just for one quarter, namely `"Bettingen"`. 
+1. Now look at the average Gini coefficients for just one quarter: "Bettingen"`. 
 
 ```{r }
 basel %>% 
@@ -56,7 +56,7 @@ basel %>%
             avg_gini_wealth = mean(XX))
 ```
 
-2. Now try `"Gundeldingen"`. How do the results compare?  
+2. Now try `"Gundeldingen"` instead. How do the results compare?  
 
 ```{r }
 basel %>% 
@@ -67,7 +67,7 @@ basel %>%
 
 # 3 - Grouping
 
-1. Wouldn't it be great if one did have to select each quarter one by one using filter? The `group_by` and`summarize` idiom saves from eaxactly that. Complete the code below to calculate the average Gini coefficients for every `quarter`.  
+1. Wouldn't it be great if one did have to select each quarter one by one using filter? The `group_by` and`summarize` idiom saves you from exactly that. Complete the code below to calculate the average Gini coefficients for every `quarter`.  
 
 ```{r }
 basel %>% 
@@ -86,7 +86,7 @@ basel %>%
   print(n = XX)
 ```
 
-3. Looks like there are some differences between the quarters. How about arranging the results such that the quarters are sorted in according to `avg_gini_income`. Which quarter has the highest Gini coefficients, which the lowest? How different are the two?
+3. Looks like there are some differences between the quarters. How about arranging the results such that the quarters are sorted according to `avg_gini_income`. Which quarter has the highest Gini coefficient, which the lowest? How different are the two?
 
 ```{r }
 basel %>% 
@@ -99,7 +99,7 @@ basel %>%
 
 # 4 - Pivoting
 
-1. Finally, build on the previous chunk to transpose the data into a long format. The first argument specifies the vector of to be transposed columns. The next two specify the column names of the two variables in the long format carrying the previous column names and column values, respectively.  
+1. Finally, transpose the output of the previous chunk to obtain the results in the long format. The first argument specifies the vector of to be transposed columns. The next two specify the column names of the two variables in the long format carrying the previous column names and column values, respectively.  
 
 ```{r }
 basel %>% 

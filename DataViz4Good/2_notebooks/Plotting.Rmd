@@ -31,14 +31,14 @@ avg_wealth <- basel %>%
 
 # 2 - Plot
 
-1. Start a ggplot using `ggplot()` by piping the `avg_wealth` data set into the functions `data` argument. 
+1. Start a ggplot using `ggplot()` by piping the `avg_wealth` data set into the function's `data` argument. 
 
 ```{r}
 avg_wealth %>% 
   ggplot()
 ```
 
-2. Running the previous chunk should have created a plank canvas in your plot panel on the bottom right. Now start setting up the structure of the plot using the `mapping` argument and the `aes()` helper function. Place `year` on the x-axis and `avg_wealth_mean` on the y-axis. 
+2. Running the previous chunk should have created a blank canvas in your bottom right RStudio panel. Now set up the structure of the plot using the `mapping` argument and the `aes()` helper function. Place `year` on the x-axis and `avg_wealth_mean` on the y-axis. 
 
 ```{r}
 avg_wealth %>% 
@@ -46,8 +46,7 @@ avg_wealth %>%
                        y = XX))
 ```
 
-3. The updated plot should now contain axis labels, tick marks and labels, and
-grid lines. It's time to add some geometric shapes to show the data. Add `geom_point()`. 
+3. The updated plot should now contain axis labels, tick marks and labels, and grid lines. It's time to add some geometric shapes to show the data. Add `geom_point()`. 
 
 ```{r}
 avg_wealth %>% 
@@ -56,7 +55,7 @@ avg_wealth %>%
   XX
 ```
 
-4. The figure should show 17 points illustrating a clear upward trend: Baselers have become quit a bit more wealthy. To emphasize the trend, add `geom_line()`.  
+4. The figure should show 17 points describing a clear upward trend: Baselers have become quit a bit more wealthy. Would an additional `geom_line()` help emphasize the trend? 
 
 ```{r}
 avg_wealth %>% 
@@ -65,11 +64,11 @@ avg_wealth %>%
   XX + XX
 ```
 
-5. Maybe `geom_smooth()` would be an even better choice? Try adding it instead of `geom_line()`. You can set `set = FALSE` inside `geom_smooth()`, if you don't want the confidence interval. 
+5. Maybe `geom_smooth()` would be an even better choice? Try adding it instead of `geom_line()`. You can set `se = FALSE` inside `geom_smooth()`, to omit the confidence interval. 
 
 # 3 - Adding a variable
 
-1. To illustrate the development of the medians at the same time, add a `geom_point()` and either `geom_line()` or `geom_smooth()` using `avg_wealth_median`. Inside these additional geoms specify that they should show `avg_wealth_median` on the y-axis using the `aes()`. Note for geoms the first argument usually is `mapping`, which is why we can omit its name in this case.  
+1. To illustrate the development of the medians in the same plot, add `geom_point()` and either `geom_line()` or `geom_smooth()` for `avg_wealth_median`. Inside these additional geoms specify that they should show `avg_wealth_median` on the y-axis using the `aes()`. Note that for geoms the first argument usually is `mapping`, which is why we can omit its name.  
 
 ```{r}
 avg_wealth %>% 
@@ -83,7 +82,7 @@ avg_wealth %>%
 
 # 4 - Facets
 
-1. Let's try to bring the Gini into the picture. Since the Gini is on a completely different scale, the best way to do this is facets. Before we get there, however, transpose `avg_wealth` to the long format. Let the new variables be called `"variable"` and `"value"`. Save the result as `avg_wealth_long`.
+1. Let's try to bring the Gini into the picture. Since the Gini is on a completely different scale, the best way to do this is facets. Before we can go there, however, you need to transpose `avg_wealth` to the long format. Let the new variables be called `"variable"` and `"value"`. Save the result as `avg_wealth_long`.
 
 ```{r}
 avg_wealth_long <- avg_wealth %>% 
@@ -92,7 +91,7 @@ avg_wealth_long <- avg_wealth %>%
                values_to = XX)
 ```
 
-2. Use `avg_wealth_long` and `facet_wrap()` to create a plot illustrates the development for all three variables with points and lines. To do this `value` must go on the y-axis and `variables` must be used as the facetting variable. 
+2. Use `avg_wealth_long` and `facet_wrap()` to create a plot that illustrates the development for all three variables with points and lines. To do this, `value` must go on the y-axis and `variables` must be used as the facetting variable. 
 
 ```{r}
 XX %>% 
@@ -112,11 +111,11 @@ XX %>%
   facet_wrap(~ XX, XX = XX, XX = XX)
 ```
 
-4. Everything has been going up: The mean wealth, the median walth, and the Gini. Development in the Gini seems mild, however, note that it sits almost at the maximum of the scale. The Gini can maximially be 1 and that only if one person has all wealth and everyone else nothing. The reason for the mild development thus is that ever more extreme changes in the distribution of wealth are necessary to push the Gini further up. 
+4. For Baselers everything has been going up: The mean wealth, the median walth, and the Gini. Development in the Gini seems mild, however, note that it sits almost at the maximum of the scale. The Gini can maximially be 1 and that only if one person has all of the wealth and everyone else nothing. Part of the reason for the mild development, thus, likely is that extreme changes in the distribution of wealth are necessary for the Gini rise by noticable amounts. 
 
 # 5 - Go explore
 
-1. Try other kinds of plots. E.g., for the full `basel` data set use `geom_boxplot()` or `geom_violin()` to show the distribution of `wealth_mean` across the quarters for each of the `years`.    
+1. Try other kinds of plots. E.g., for the full `basel` data set, use `geom_boxplot()` or `geom_violin()` to show the distribution of `wealth_mean` across the quarters for each of the `years`.    
 
 
 
