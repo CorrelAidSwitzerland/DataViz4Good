@@ -224,7 +224,7 @@ ggplot(data = basel_avg,
 .pull-left45[
 
 <ul>
-  <li class="m1"><span>The <mono>+</mono> operator is add <high>additional elements</high> to the plot.</span></li>
+  <li class="m1"><span>The <mono>+</mono> operator "adds" <high>additional elements</high> to the plot.</span></li>
   <li class="m1"><span>Not to be confused with the pipe <mono>%>%</mono>.</span></li>
 </ul>
 
