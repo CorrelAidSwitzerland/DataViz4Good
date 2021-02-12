@@ -257,7 +257,6 @@ Klicke auf <high>"....running..."</high> auf unserer Website!
 ]
 
 
-
 ---
 
 .pull-left45[
@@ -282,6 +281,12 @@ Klicke auf <high>"....running..."</high> auf unserer Website!
 <img src="image/schedule.png" height="480" align="center" style="padding-top:16px">
 
 ]
+
+---
+
+class: middle, center
+
+<h1><a href="https://www.dropbox.com/s/k82cg8p2sl1ojn7/DataViz4Good.zip?dl=1">Download<br>materials</a></h1>
 
 
 ---
